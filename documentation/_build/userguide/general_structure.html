@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Guide &mdash; JEDI-Analysis 25.3.2022 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/underscore.js"></script>
+        <script src="../_static/doctools.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Reading and interpreting the output" href="output.html" />
+    <link rel="prev" title="Energies" href="../preparation/energies_gen.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search"  style="background: #0b750a" >
+            <a href="../index.html">
+            <img src="../_static/Logo_JEDI_dark_grey.png" class="logo" alt="Logo"/>
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Set Up:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation/setup.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation/setup.html#building-guide">Building Guide</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Preparation:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../preparation/input_data.html">Input Data</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">User Guide</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">User Guide</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#general-structure">General structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#optional-arguments">Optional Arguments</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#specify-a-directory">Specify a directory</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#generate-vmd-output">Generate VMD Output</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="output.html">Reading and interpreting the output</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Modules</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../modules/jedi_files.html">Module: jedi_files</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/jedi_files.html#module-jedi-directory">Module: jedi_directory</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/jedi_rims.html">Module: jedi_rims</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/jedi_kill_atoms.html">Module: jedi_kill_atoms</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/jedi_b.html">Modules: jedi_b</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/jedi_delta_q.html">Module: jedi_delta_q</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/jedi.html">Module: JEDI - main routine</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../modules/vmd_gen.html">Module: vmd_gen</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Examples</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../examples/testing.html">Examples and test files</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu"  style="background: #0b750a" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">JEDI-Analysis</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home"></a> &raquo;</li>
+      <li>User Guide</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/userguide/general_structure.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="user-guide">
+<h1>User Guide<a class="headerlink" href="#user-guide" title="Permalink to this headline"></a></h1>
+<p>The JEDI Analysis produces output and performs the underlying calculations in redundant internal coordinates,
+where as the input data is given in cartesian coordinates. The main routine of the JEDI Analysis converts the
+cartesian coordinates and the Hessian into redundant internal coordinates to then apply the
+harmonic approximation to calculate the energies in the redundant internal coordinates.
+To achieve the switching between the cartesian and redundant internal coordinates, the B-Matrix is calculated according to
+V. Bakken, T. Helgaker, J. Chem. Phys. 117 (20) 2002.</p>
+<section id="general-structure">
+<h2>General structure<a class="headerlink" href="#general-structure" title="Permalink to this headline"></a></h2>
+<p>The main routine <code class="docutils literal notranslate"><span class="pre">jedi.py</span></code> runs all subscripts in the following order:</p>
+<ol class="arabic simple">
+<li><p>Read x0, xF, energies and the Hessian (<code class="docutils literal notranslate"><span class="pre">jedi_files.py</span></code>)</p></li>
+<li><p>Calculate the redundant internal modes of the relaxed geometry (<code class="docutils literal notranslate"><span class="pre">jedi_rims.py</span></code>)</p></li>
+<li><p>Check if atoms are defined to be masked (<code class="docutils literal notranslate"><span class="pre">jedi_kill_atoms.py</span></code>)</p></li>
+<li><p>Calculate the B-Matrix (<code class="docutils literal notranslate"><span class="pre">jedi_b.py</span></code>)</p></li>
+<li><p>Convert the change in cartesian coordinates into redundant internal coordinates (<code class="docutils literal notranslate"><span class="pre">jedi_delta_q.py</span></code>)</p></li>
+<li><p>Run the JEDI Analysis</p></li>
+</ol>
+</section>
+<section id="optional-arguments">
+<h2>Optional Arguments<a class="headerlink" href="#optional-arguments" title="Permalink to this headline"></a></h2>
+<p>The main routine <code class="docutils literal notranslate"><span class="pre">jedi.py</span></code> takes two optional arguments.</p>
+<section id="specify-a-directory">
+<h3>Specify a directory<a class="headerlink" href="#specify-a-directory" title="Permalink to this headline"></a></h3>
+<p>By calling a <code class="docutils literal notranslate"><span class="pre">--d</span></code> flag a path can be specified, that already contains a
+list of redundant internal modes.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">jedi.py --d &lt;directory_path&gt;</span>
+</pre></div>
+</div>
+</section>
+<section id="generate-vmd-output">
+<h3>Generate VMD Output<a class="headerlink" href="#generate-vmd-output" title="Permalink to this headline"></a></h3>
+<p>By default the JEDI Analysis generates a VMD readable output, which defines bonds colors
+according to the strain energy stored in them (green: low strain, yellow: medium
+strain, red: high strain; transitions are fluent).</p>
+<p>The –v flag can be either used to suppress the vmd_gen.py script or to manually specify
+a maximum strain that is colored “reddest” in the VMD Analysis.</p>
+<div class="highlight-console notranslate"><div class="highlight"><pre><span></span><span class="go">jedi.py --v n/maximum_strain</span>
+</pre></div>
+</div>
+<p>For further information on the <code class="docutils literal notranslate"><span class="pre">--d</span></code> or <code class="docutils literal notranslate"><span class="pre">--v</span></code> flag, please take a closer look into the according modules.</p>
+</section>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="../preparation/energies_gen.html" class="btn btn-neutral float-left" title="Energies" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="output.html" class="btn btn-neutral float-right" title="Reading and interpreting the output" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2022, Institute for physical and theoretical chemistry, University Bremen, Germany.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
