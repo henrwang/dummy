@@ -80,11 +80,11 @@ If pip is not already installed, then bootstrap it from the standard library:
 
     python -m ensurepip --default-pip
 
-After ensuring that pip is installed, pandas and NumPy can be installed via pip from PyPI using
+After ensuring that pip is installed, ASE and NumPy can be installed via pip from PyPI using
 
 .. code-block:: console
 
-    pip install pandas 
+    pip install ase 
 
 and 
 
@@ -101,6 +101,8 @@ Clone the JEDI repository to your local machine with ``git`` from GitHub:
 
 .. code-block:: console
     
-    git clone https://github.com/sannabenter/JEDI.git
+    git clone https://github.com/henrwang/jedi.git
 
-This clones the JEDI repository to a local folder ``JEDI``. 
+This clones the JEDI repository to a local folder ``jedi``. 
+
+Add ~/jedi to your $PYTHONPATH environment variable (assuming ~/jedi is where your jedi folder is).
