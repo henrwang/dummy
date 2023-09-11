@@ -1,3 +1,7 @@
+.. _api:
+
+.. autoclass:: jedi.jedi.Jedi
+    :members:
 ===============
 The Jedi Object
 ===============
