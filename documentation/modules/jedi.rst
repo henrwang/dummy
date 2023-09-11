@@ -14,5 +14,5 @@ The main routine produces the output discussed in the
 
 List of all Methods
 ===================
-.. autoclass:: Atoms
+.. autoclass:: jedi.Jedi
    :members:
